@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link del estilo css-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--título del formulario-->
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div id="contenedorPrincipal">
+        <div id="titulo">
+            <p>INGRESE SUS DATOS</p>
+        </div>
+    <form action="https://postman-echo.com/post" method="post">
+
+        <!--campo nombre-->
+        <div class="contenedorCampo">
+            <label for="nombre">Nombre:</label>
+            <input class="input-texto" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" maxlength="30" minlength="2" autocomplete="on" required>
+        </div>
+
+        <!--campo apellido-->
+        <div class="contenedorCampo">
+            <label for="apellido">Apellido:</label>
+            <input class="input-texto" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required> 
+        </div>
+
+        <!--campo edad-->
+        <div class="contenedorCampo">
+            <label for="edad">Edad:</label>
+            <input class="input-texto" type="number" name="edad" id="edad" min="3" placeholder="Ingrese su edad" required>
+        </div>
+
+         <!--campo email-->
+        <div class="contenedorCampo">
+            <label for="edad">Email:</label>
+            <input class="input-texto" type="email" name="email" id="email" placeholder="Ingrese su email" required>
+        </div>
+
+        <!--campo contraseña-->
+        <div class="contenedorCampo">
+            <label for="password">Password:</label>
+            <input class="input-texto" type="password" name="password" id="password" placeholder="Ingrese la clave" required> 
+        </div>
+
+        <!--campo genero-->
+        <div class="contenedorCampo">
+            <label  for="password">Género:</label>
+            <div class="opciones">
+                <input type="radio" name="genero" value="femenino"><span>Femenino</span>
+                <input type="radio" name="genero" value="masculino"><span>Masculino</span>
+                <input type="radio" name="genero" value="otros"><span>Otros </span>
+            </div>
+        </div>
+
+        <!--campo estudios-->
+        <div class="contenedorCampo">
+            <label for="estudios">Estudios:</label> 
+            <div class="opciones">
+                <input type="checkbox" name="primaria" id="estudios" value="si"><span>Primaria</span> 
+                <input type="checkbox" name="secundaria" id="estudios" value="si"><span> Secundaria</span>
+                <input type="checkbox" name="Terciario" id="estudios" value="si"><span>Terciario</span>
+                <input type="checkbox" name="cursos" id="estudios" value="si"><span>Cursos</span>
+            </div>
+        </div>
+
+        <!--campo vehículo-->
+        <div class="contenedorCampo">
+            <label for="vehiculo">Vehiculo:</label>
+            <select name="vehiculo" id="vehiculo">
+                <option value="ford">Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="vm">VM</option>
+                <option value="fiat">Fiat</option>
+                <option value="otros">Otros</option>
+            </select> <br>
+        </div>
+
+        <!--campo de color-->
+        <div class="contenedorCampo">
+            <label for="color">Color de tu auto:</label>
+            <input class="input-texto" type="color" name="color">
+        </div>
+
+        <!--campo de comentario-->
+        <div class="contenedorCampo">
+            <label for="comentario">Comentario:</label>
+            <textarea name="comentario" id="comentario" placeholder="Escriba aquí su comentario..." cols="30" rows="10"></textarea> 
+        </div>
+
+         <!--campo nivel-->
+         <div class="contenedorCampo">
+            <label for="nivel">Nivel:</label>
+            <input class="input-texto" type="range" name="nivel" value="25">
+        </div>
+
+        <!--campo fecha-->
+        <div class="contenedorCampo">
+            <label for="fecha">Fecha:</label> <br>
+            <input class="input-texto" type="date" name="fecha" id="fecha">
+        </div>
+
+         <!--campo enviar-->
+         <br>
+         <div class="contenedorBoton">
+            <input class="input-texto" type="submit" value="Enviar">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
+
+
